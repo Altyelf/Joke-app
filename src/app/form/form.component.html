@@ -1,0 +1,36 @@
+<div class="main">
+  <h1 class="heading">
+    Create a joke
+  </h1>
+</div>
+<div class="wrapper">
+  <div>
+    <label for="Question" class="form-label">
+      Question
+    </label>
+    <input
+      type="text"
+      id="Question"
+      placeholder="Enter the question"
+      class="form-control"
+      #q="ngModel"
+      [(ngModel)]="Question"
+    />
+  </div>
+  <div>
+    <label for="Answer" class="form-label">
+      Answer
+    </label>
+    <input
+      type="text"
+      id="Answer"
+      placeholder="Enter the punchline"
+      class="form-control"
+      #a="ngModel"
+      [(ngModel)]="Answer"
+    />
+  </div>
+  <button  (click)="createJoke()" type="submit" class="button-submit">
+    Create
+  </button>
+</div>

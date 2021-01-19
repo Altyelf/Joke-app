@@ -1,0 +1,21 @@
+<div class="joke-card">
+  <h5 class="question">
+    {{joke.question}}
+  </h5>
+  <h6
+    class="answer"
+    [hidden]="joke.hidden"
+  >
+    {{joke.answer}}
+  </h6>
+  <button
+    class="button-hidden"
+    type="submit"
+    (click)="joke.hidden = !joke.hidden"
+  >
+    {{joke.hidden? 'Tell me': 'Hide it'}}
+  </button>
+  <button (click)="deleteJoke()" class="button-delete" type="submit">
+    Delete
+  </button>
+</div>

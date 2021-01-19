@@ -1,0 +1,39 @@
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+ color: white;
+ margin: 20px;
+}
+.wrapper {
+  background-color: rgb(65, 206, 152);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-label {
+  font-size: 20px;
+  color: white;
+}
+
+.form-control {
+  display: block;
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+
+}
+
+.button-submit{
+  background-color: rgb(105, 88, 88);
+  color: white;
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
